@@ -1,0 +1,6 @@
+ul li {
+  list-style-type: none;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
