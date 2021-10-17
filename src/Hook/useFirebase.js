@@ -21,6 +21,9 @@ const useFirebase = () => {
   const [user, setUser] = useState({});
   const [error, setError] = useState("");
 
+
+
+
   const handleGoogleLogin = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
@@ -30,6 +33,13 @@ const useFirebase = () => {
       })
       .catch((error) => setError(error.message));
   };
+
+
+
+
+
+
+
 
   const handleGithubLogin = () => {
     signInWithPopup(auth, githubProvider)

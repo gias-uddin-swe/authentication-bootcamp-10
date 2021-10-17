@@ -7,9 +7,9 @@ import "./Header.css";
 const Header = () => {
   const { handleLogout, user } = useFirebase();
 
- 
-
-
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  
   return (
     <div>
       <ul className="d-flex justify-content-center p-2 m-3">

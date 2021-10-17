@@ -18,7 +18,7 @@ import {
 
 import About from "./components/About/About";
 import AuthProvider from "./components/AuthProvider/AuthProvider";
-import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -45,6 +45,7 @@ function App() {
             <PrivateRoute exact path="/payment">
               <Payment></Payment>
             </PrivateRoute>
+
             <Route path="/*">
               <Error></Error>
             </Route>
